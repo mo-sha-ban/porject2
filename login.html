@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/logo-icon.png">
+<!-- normal position for elements -->
+    <link rel="stylesheet" href="css/normalize.css">
+<!-- font Awesome library -->
+    <link rel="stylesheet" href="css/all.min.css"> <!-- css file of template-4  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>All Products-TWM.3 RedStore</title>
+</head>
+<body>
+    <!-- Start Header  -->
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="imgs/logo.png" alt="Logo">
+            </div>
+
+            <div class="nav">
+                <ul id="menuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="login.html">Account</a></li>
+                </ul>
+                inpu
+            </div>
+            <div class="icons">
+                <div class="toggel">
+                    <i class="fa-solid fa-bars" onclick="menutoggle()"></i>
+                </div>
+                <div class="card">
+                    <a href="cart.html"><img src="imgs/cart.png"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Header  -->
+
+<!-- -------------Start Login ------------------- -->
+
+<div class="login">
+    <div class="container">
+        <div class="box">
+            <div class="img">
+                <img src="imgs/image1.png" alt="">
+            </div>
+            <div class="form">
+                <div class="form-btn">
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="indecator">
+                </div>
+                <form action="" class="log-in" id="logForm">
+                    <input type="text" placeholder="User Name" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                    <a href="#">Forget Password</a>
+                </form>  
+<!-- ----------- register ----------- -->
+                <form action="" class="register" id="regForm">
+                    <input type="text" placeholder=" Enter Your  Name">
+                    <input type="email" placeholder=" Enter Your Email" required>
+                    <input type="password" placeholder=" Enter Your password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Start Header -->
+    <header>
+        <div class="container">
+            <div class="box">
+                <h4>Download our app </h4>
+                <p>Download our app for android or ios</p>
+                <div class="img">
+                    <a href="https://www.apple.com/app-store/" target="blanck"><img src="imgs/app-store.png" alt="app-store"></a>
+                    <a href="https://play.google.com/store/apps" target="blanck"><img src="imgs/play-store.png" alt="app-store"></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="logo">
+                    <img src="imgs/Orange-Logo.png" alt="logo">
+                    <p>our purpose is sustainably make the pleasure <br> and benefits of sports accessible to the many</p>
+                </div>
+            </div>
+            <div class="box">
+                <h4> Useful Links </h4>
+                <ul>
+                    <li>Template One</li>
+                    <li>Template two</li>
+                    <li>Template three</li>
+                    <li>Template JS</li>
+                    <li> My Website</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h4> Follow Us </h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100058685019959" target="blanck">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/mo____shaban/" target="blanck">Instagram</a></li>
+                    <li><a href="https://twitter.com/mo_sha_ban" target="blanck">Twitter</a></li>
+                    <li><a href="https://t.me/mo_sha_ban" target="blanck">Telegram</a></li>
+                    <li><a href="https://www.linkedin.com/in/mostafa-shaban-33b244233/" target="blanck">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+            <hr>
+            <p>All Copyright &copy reseved by <span><a href="#">TWM.3</a></span></p>
+    </header>
+<!-- End Header -->
+
+
+
+    <!---------------- JS For Toggle Menu ----------------->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggle () {
+            if( menuItems.style.maxHeight == "0px")
+            {
+                menuItems.style.maxHeight = "300px";
+            }
+            else 
+            {
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+<!-- ----------- JS For Login page ---------------- -->
+        <script>
+            var logForm = document.getElementById("logForm")
+            var regForm = document.getElementById("regForm")
+            var indecator = document.getElementById("indecator")
+
+            function login() {
+                logForm.style.transform= "translateX(0px)"
+                regForm.style.transform= "translateX(0px)"
+                indecator.style.transform= "translateX(33px)"
+            }
+
+            function register() {
+                logForm.style.transform= "translateX(300px)"
+                regForm.style.transform= "translateX(300px)"
+                indecator.style.transform= "translateX(113px)"
+            }
+
+
+        </script>
+</body>
+</html>
